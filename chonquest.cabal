@@ -41,7 +41,7 @@ stability:           experimental
 
 -- Extra files to be distributed with the package, such as examples or
 -- a README.
--- Extra-source-files:  
+Extra-source-files:  data/chonquest.glade
 
 -- Constraint on the version of Cabal needed to build this package.
 Cabal-version:       >= 1.6
@@ -52,7 +52,7 @@ Executable chonquest
   Main-Is:             Main.hs
 
   -- Packages needed in order to build this package.
-  Build-depends:       base >= 4 && < 5, mtl, array
+  Build-depends:       base >= 4 && < 5, mtl, array, gtk, glade
   
   -- Modules not exported by this package.
   -- Other-modules:       
