@@ -16,8 +16,7 @@ Synopsis:            A Haskell clone of GNUlactic Konquest
 -- Description:         
 
 -- URL for the project homepage or repository.
-Homepage:            favilo.homeunix.org
-
+Homepage:            https://github.com/favilo/chonquest.git
 -- The license under which the package is released.
 License:             BSD3
 
@@ -32,26 +31,28 @@ Author:              Favil Orbedios
 Maintainer:          favilo@gmail.com
 
 -- A copyright notice.
--- Copyright:           
+Copyright:           (c) 2010 Kevin Oberlies
 
 Category:            Game
 
 Build-type:          Simple
+
+stability:           experimental
 
 -- Extra files to be distributed with the package, such as examples or
 -- a README.
 -- Extra-source-files:  
 
 -- Constraint on the version of Cabal needed to build this package.
-Cabal-version:       >=1.2
+Cabal-version:       >= 1.6
 
 
-Library
-  -- Modules exported by the library.
-  -- Exposed-modules:     
-  
+Executable chonquest
+  Hs-Source-Dirs:      src
+  Main-Is:             Main.hs
+
   -- Packages needed in order to build this package.
-  -- Build-depends:       
+  Build-depends:       base >= 4 && < 5, mtl, array
   
   -- Modules not exported by this package.
   -- Other-modules:       
