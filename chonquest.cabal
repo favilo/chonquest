@@ -13,7 +13,7 @@ Version:             0.0.0.1
 Synopsis:            A Haskell clone of GNUlactic Konquest
 
 -- A longer description of the package.
--- Description:         
+Description:         A Haskell clone of GNUlactic Konquest
 
 -- URL for the project homepage or repository.
 Homepage:            https://github.com/favilo/chonquest.git
@@ -53,10 +53,10 @@ Executable chonquest
 
   -- Packages needed in order to build this package.
   Build-depends:       base >= 4 && < 5, mtl, array, gtk, glade
-  
+
   -- Modules not exported by this package.
   -- Other-modules:       
-  
+
   -- Extra tools (e.g. alex, hsc2hs, ...) needed to build the source.
   -- Build-tools:         
-  
+

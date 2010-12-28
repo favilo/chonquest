@@ -6,16 +6,18 @@ import Control.Monad
 import Control.Monad.State
 import Control.Monad.Reader
 
+import Graphics.UI.Gtk.Glade
+
 type CellArray = Array Int Cell
 type Coord     = (Int, Int)
 type AppState  = StateT Board IO
 type AppEnv    = ReaderT AppConfig AppState
 
 data AppConfig = AppConfig
-    { 
-      board    :: Board
+    { board    :: Board
+    , xml      :: GladeXML
     }
-    deriving (Show, Eq)
+    deriving (Eq)
 
 data Owner = Vacant
     | Neutral
