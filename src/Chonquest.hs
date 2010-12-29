@@ -68,7 +68,7 @@ data Board = Board
     } 
     deriving (Show, Eq)
 
-initEnv :: IO AppConfig
-initEnv = do
+initEnv :: GladeXML -> IO AppConfig
+initEnv xml = do
     return undefined
 
